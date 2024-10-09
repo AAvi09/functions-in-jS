@@ -146,3 +146,7 @@ document
   .addEventListener('click', poll.registerAnswer.bind(poll));
 
 poll.displayResult.call({ answers: [5, 2, 3] }, 'string');
+
+(function () {
+  console.log('this will run just once immediately');
+})();
