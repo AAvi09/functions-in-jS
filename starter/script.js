@@ -172,3 +172,20 @@ runOnce();
 }
 // console.log(isPrivate);
 console.log(notPrivate);
+
+//closures
+
+const entry = function () {
+  let count = 0;
+
+  return function () {
+    count++;
+    console.log(count);
+  };
+};
+
+const entryCounter = entry();
+
+entryCounter();
+entryCounter();
+entryCounter();
