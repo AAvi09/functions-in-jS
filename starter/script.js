@@ -189,3 +189,4 @@ const entryCounter = entry();
 entryCounter();
 entryCounter();
 entryCounter();
+console.dir(entryCounter);
