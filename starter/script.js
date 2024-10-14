@@ -190,3 +190,26 @@ entryCounter();
 entryCounter();
 entryCounter();
 console.dir(entryCounter);
+
+let f;
+const g = function () {
+  const a = 36;
+  f = function () {
+    console.log(a * 2);
+  };
+};
+
+g();
+f();
+console.dir(f);
+
+const h = function () {
+  const b = 858;
+  f = function () {
+    console.log(b + 1000);
+  };
+};
+
+h();
+f();
+console.dir(f);
