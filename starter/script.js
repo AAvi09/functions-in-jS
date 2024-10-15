@@ -213,3 +213,7 @@ const h = function () {
 h();
 f();
 console.dir(f);
+
+const sankhya = [7, 3, 26];
+sankhya.sort();
+console.log(sankhya[1]);
